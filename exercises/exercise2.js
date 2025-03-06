@@ -22,3 +22,14 @@ console.log(a1);
 console.log('checkIfArray(a2): (should append 20, "Is an array" to a2)')
 checkIfArray(a2);
 console.log(a2);
+
+function checkIfArray(a){
+  if (!Array.isArray(a)) {
+    console.log("Not an array");
+  }
+  else
+  {
+    //a.push(20, "Is an array");
+    a = [...a, 20, "Is an array"];
+  }
+}
